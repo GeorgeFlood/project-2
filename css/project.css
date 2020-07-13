@@ -1,0 +1,223 @@
+*{
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body{
+background-color: rgb(192, 196, 204);
+font-size: 20px;
+}
+
+@font-face{
+font-family: 'roboto';
+src: url(../fonts/Roboto-Regular.ttf);
+font-style: normal;
+font-weight: 100;
+}
+@font-face{
+font-family: 'robotoblack';
+src: url(../fonts/Roboto-Black.ttf);
+font-style: normal;
+font-weight: 400;	
+}
+
+
+p{
+font-family: roboto;
+font-weight: 100;
+}
+
+
+h1{
+font-family: robotoblack;
+margin: 0px;
+}
+
+h2{
+font-family: robotoblack;
+margin: 0px	;	
+}
+
+img{
+width: 300px;
+max-width: 100%;
+}
+
+.main-nav{
+padding: 0px 0px;
+}
+
+li{
+background-color: lightgreen;
+list-style-type: none;
+margin: 10px;
+padding: 5px;
+}
+
+a:link{
+font-family: roboto;
+display: block;
+text-decoration: none;
+}
+
+footer{
+background-color: lightgreen;
+}
+
+.container{
+padding-right: 1em;
+padding-left: 1em;
+text-align: center;
+margin: 0px 0px;
+}
+
+.sticky-footer{
+min-height: calc(100vh - 176px);
+}
+
+.banner{
+background-color: rgb(139, 224, 207);
+padding: 20px;
+}
+
+.portfolio{
+margin: 40px;
+border-bottom: solid 4px orange;
+}
+
+.footer-nav{
+padding: 0px 0px;
+}
+
+.footer-info{
+text-align: center;
+}
+
+.nav-home,
+.nav-portfolio,
+.nav-contact{
+display: none;
+}
+
+.footer-name{
+float: left;
+}
+
+.footer-nav li{
+float: right;
+margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*MEDIA QUERIES FOR TABLET*/
+
+@media(min-width: 768px){
+
+.main-nav{
+margin: 0px;
+}
+
+li{
+display: inline-block;
+background-color: transparent;
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6{
+float: left;
+width: 50%;
+padding: 10px 35px 10px 35px;
+}
+
+.portrait,
+.intro{
+float: right;
+padding: 0px 20px 0px 10px;
+width: 50%;
+}
+.intro{
+margin-top: 50px;
+}
+
+.portrait{
+padding: 0px 0px 0px 40px;
+}
+
+.footer-nav{
+display: inline-block;
+}
+
+
+.top{
+display: none;
+}
+
+
+.nav-home,
+.nav-portfolio,
+.nav-contact{
+display: inherit;
+}
+
+.footer-info{
+display: inline-block;
+float: left;
+width: 100%;
+padding-left: 20%;
+}
+
+.footer-nav{
+margin: 0px;}	
+}
+
+@media(min-width: 1024px){
+
+.banner{
+width: 100%;
+}
+
+.portrait{
+float: right;	
+}
+
+.intro{
+margin-top: 10%;
+}
+
+.name{
+float:left;	
+}
+
+.main-nav{
+float: right;	
+}
+ .col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6{
+float: left;
+width: 33%;
+padding: 30px 20px;
+}
+
+.footer-name, .footer-nav{
+display: inline-block;
+padding-left: 5%;
+}
